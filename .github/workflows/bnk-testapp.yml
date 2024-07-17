@@ -2,7 +2,7 @@ name: Build and deploy .NET Core application to Web App bnk-testapp
 on:
   push:
     branches:
-    - main
+    - github
 env:
   AZURE_WEBAPP_NAME: bnk-testapp
   AZURE_WEBAPP_PACKAGE_PATH: src/myApp/published
