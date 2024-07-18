@@ -28,7 +28,7 @@ steps:
     azureSubscription: 'FY24-DevDad-Sandbox(8d578a94-4be5-437d-9eaa-e507a672fcb2)'
     appType: 'webAppLinux'
     WebAppName: 'bnk-testapp'
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
     RuntimeStack: 'DOTNETCORE|8.0'
     StartupCommand: 'dotnet myApp.dll'
     AppSettings: '-EnvName AzDevOps'
