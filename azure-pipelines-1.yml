@@ -29,6 +29,6 @@ steps:
     appType: 'webAppLinux'
     WebAppName: 'bnk-testapp'
     packageForLinux: '$(Build.ArtifactStagingDirectory)/**/*.zip'
-    RuntimeStack: 'DOTNETCORE|8.0'
+    RuntimeStack: 'DOTNETCORE|7.0'
     StartupCommand: 'dotnet myApp.dll'
     AppSettings: '-EnvName AzDevOps'
